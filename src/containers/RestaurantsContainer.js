@@ -19,4 +19,5 @@ const mapStateToProps = dispatch => ({
   addReview: review => dispatch({type: 'ADD_REVIEW, review'}),
   deleteReview: id => dispatch({type: 'DELETE_REVIEW, id'})
 })
-export default RestaurantsContainer
+
+export default connect(mapStateToProps, mapDispatchToProps)(RestaurantsContainer)
