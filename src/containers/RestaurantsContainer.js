@@ -15,7 +15,7 @@ class RestaurantsContainer extends Component {
   }
 }
 const mapStateToProps = dispatch => ({
-  addReview: review => dispatch({type: 'ADD_REVIEW, review'})
+  addReview: review => dispatch({type: 'ADD_REVIEW, review'}),
   deleteReview: id => dispatch({type: 'DELETE_REVIEW, id'})
 })
 export default RestaurantsContainer
