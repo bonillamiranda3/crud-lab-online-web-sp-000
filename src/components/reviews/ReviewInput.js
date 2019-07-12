@@ -3,28 +3,24 @@ import Reviews from './Reviews';
 
 class ReviewInput extends Component {
 
-    constructor(props) {
-      super(props);
+  state = {
+    text: ''
+  }
 
-      this.state = {
-        text: ''
-      };
-    };
+  handleOnChange = event => {
+    this.setState({
+      text: event.target.value,
+    });
+  }
 
-    handleOnChange(event) {
-      this.setState({
-        text: event.target.value
-        
-      });
-    }
+  handleOnSubmit = event => {
+    event.preventDefault();
+    this.props.addReview({text: this.state.text, restaurantId: this.props.restaurantId });
+    this.setState({
+      text: '',
+    });
+  }
 
-    handleOnSubmit(event) {
-      event.preventDafault();
-      this.props.addRestaurant(this.state.text)
-      this.setState({
-        text: ''
-      });
-    }
     
   render() {
     return (
