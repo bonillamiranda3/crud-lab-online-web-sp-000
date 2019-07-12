@@ -18,7 +18,7 @@ class RestaurantInput extends Component {
       event.preventDafault();
       this.props.addReview({text: this.state.text, restaurantId: this.props.restaurantId});
       this.setState({
-        text: '',
+        text: ''
       });
     }
   render() {
