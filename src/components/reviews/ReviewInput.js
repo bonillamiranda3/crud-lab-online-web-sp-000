@@ -13,7 +13,7 @@ class ReviewInput extends Component {
 
     handleOnChange(event) {
       this.setState({
-        text: event.target.value;
+        text: event.target.value
         
       });
     }
