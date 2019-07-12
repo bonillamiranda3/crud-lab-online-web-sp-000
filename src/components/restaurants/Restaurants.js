@@ -4,7 +4,8 @@ class Restaurants extends Component {
   render() {
     return(
       <ul>
-        Restaurants Component
+        //Restaurants Component
+        {restaurantList}
       </ul>
     );
   }
