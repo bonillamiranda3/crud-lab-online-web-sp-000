@@ -12,7 +12,7 @@ class RestaurantsContainer extends Component {
         <Restaurants restaurants={this.props.restaurants}
         deleteRestaurant={this.props.deleteRestaurant} />
       </div>
-    )
+    );
   }
 }
 const mapStateToProps = dispatch => ({
